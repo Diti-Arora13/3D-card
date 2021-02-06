@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::selection{
+	background-color: #B3FFB3;
+}
+
+body {
+     font-family: 'arial', sans-serif;
+     font-weight: normal;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.sneaker img{
+	z-index: 2;
+	transition: all .75s ease-out;
+    height: 200px;
+    width: 250px;
+}
+
+.sneaker {
+	min-height: 35vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+   }
+
+.container {
+ 	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
+.card{
+	transform-style: preserve-3d;
+	padding: 30px;
+	min-height: 20vh;
+	width: 20rem;
+	border-radius: 30px;
+	box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(to right, #FF4747 40%,#3D70B8);
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1;
+ }
+
+ .info h1 {
+ 	font-size: 2rem;
+ 	margin-top: 10px;
+ 	transition: all .75s ease-out;
+ }
+
+ .info h3 {
+ 	font-size: 1rem;
+    padding: 20px;
+    color: #585858;
+    font-weight: lighter;
+    transition: all .75s ease-out;
+    text-transform: lowercase;
+ }
+
+ .sizes {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	transition: all .75s ease-out;
+ 	background-color: #fff;
+   }
+.sizes button {
+	padding: .5rem 10px;
+ 	-webkit-background-clip: text;
+	-webkit-text-fill-color: #000;
+ 	border: none;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+	border-radius: 30px;
+	cursor: pointer;
+	font-weight: bold;
+ 	transition: all .75s ease-out;
+}
+
+ .active {
+	background-color: pink;
+	color: white;
+	transition: all .75s ease-out;
+}
+
+.purchase {
+	margin-top: 2rem;
+	transition: all .75s ease-out;
+	background-color: #E63946;
+  }
+
+.purchase button{
+	width: 100%;
+	padding: 10px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #fff;
+	border-radius: 20px;
+	border: none;
+ 	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	cursor: pointer;
+	transition: all .75s ease-out;
+  }
+
