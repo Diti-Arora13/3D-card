@@ -10,19 +10,19 @@ const sizes = document.querySelector(".sizes");
 
 //Moving Animation Event
 container.addEventListener("mousemove", (e) => {
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
+  let yAxis = (window.innerHeight / 2 - e.pageY) /15;
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 //Animate In
 container.addEventListener("mouseenter", (e) => {
   card.style.transition = "none";
   //Popout
-  title.style.transform = "translateZ(150px)";
+  title.style.transform = "translateZ(130px)";
   sneaker.style.transform = "translateZ(200px) rotateZ(-45deg)";
-  description.style.transform = "translateZ(125px)";
-  sizes.style.transform = "translateZ(100px)";
-  purchase.style.transform = "translateZ(75px)";
+  description.style.transform = "translateZ(115px)";
+  sizes.style.transform = "translateZ(70px)";
+  purchase.style.transform = "translateZ(65px)";
 });
 //Animate Out
 container.addEventListener("mouseleave", (e) => {
