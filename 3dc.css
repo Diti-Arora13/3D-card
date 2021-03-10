@@ -82,8 +82,7 @@ body {
 	font-weight: lighter;
     	color: #dfdfdf;
     	transition: all .75s ease-out;
-    	text-transform: lowercase;
-	font-family: 'Barlow', sans-serif;
+ 	font-family: 'Barlow', sans-serif;
 	margin-left: -10px;
  }
 
