@@ -14,19 +14,19 @@
 
 body {
 	background: rgb(12, 11, 11);
-        font-weight: normal;
+     	font-weight: normal;
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
-     	justify-content: center;
+    	justify-content: center;
     	perspective: 1000px;
 }
 
 .sneaker img{
 	z-index: 2;
 	transition: all .75s ease-out;
-        height: 130px;
-        width: 270px;
+    	height: 130px;
+    	width: 270px;
 }
 
 .sneaker {
@@ -73,7 +73,7 @@ body {
 	font-family:  sans-serif;
 	font-weight: 300;
 	margin-left: 10px;
-        color: #ffffff;
+	color: #ffffff;
  }
 
  .info h3 {
